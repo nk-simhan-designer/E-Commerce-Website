@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 35px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgb(16, 51, 84);
+    font-size: 20px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-links a:hover {
+    transform: scale(1.10);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+/* Side Navbar */
+.side-navbar {
+    background: linear-gradient(135deg, rgb(13, 51, 80), rgb(57, 57, 57));
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar i {
+    cursor: pointer;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.side-navbar .side-navbar-link a:hover {
+    transform: scale(1.10);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: rgb(13, 51, 80);
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(135deg, rgb(13, 51, 80), rgb(57, 57, 57));
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.contact-form button i {
+    margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, rgb(13, 51, 80), rgb(57, 57, 57));
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .navbar-menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+}
