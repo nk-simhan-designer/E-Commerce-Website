@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" href="Images/nostraicon.png" />
+    <link rel="stylesheet" href="CSS/cstyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Online Shopping and More | Nostra</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="Images/nostralogo.png" height="135px" width="135px" />
+
+      <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="collections.html">Collections</a></p>
+        <p class="navbar-link"><a href="contact.html">Contact</a></p>
+      </div>
+
+      <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="side-navbar">
+      <p style="text-align: right" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+      <p class="side-navbar-link"><a href="index.html">Home</a></p>
+      <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+      <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <p>
+        Have questions or feedback? Fill out the form below and we’ll get back
+        to you!
+      </p>
+
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="footer-box-1">
+        <h2 class="headingText">Nostra</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          natus, aut enim quos ea voluptas! Nam similique eos cumque eaque.
+        </p>
+      </div>
+      <div class="footer-icon-container">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+      <p>@ 2026 Nostra.com</p>
+    </div>
+
+    <script src="JS/cscript.js"></script>
+  </body>
+</html>
